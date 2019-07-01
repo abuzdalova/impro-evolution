@@ -1,5 +1,6 @@
-package org.improevolution.generators;
+package org.improevolution;
 
+import org.improevolution.generators.Silence;
 import org.junit.Assert;
 import org.junit.Test;
 
