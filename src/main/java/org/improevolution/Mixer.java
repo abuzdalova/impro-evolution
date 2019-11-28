@@ -9,8 +9,10 @@ package org.improevolution;
  */
 public interface Mixer extends AutoCloseable {
     /**
-     * This class represents a slot which contains a generator along with its mixing rule.
-     *
+     * This class represents a slot which contains a generator along with its mixing rule. 
+     * The physical meaning of a slot is a place for a separate individual, which is evaluated by the user. 
+     * Typically, there is a small number of slots, e.g. left, middle and right.
+     * 
      * @author Maxim Buzdalov
      */
     final class Slot {
@@ -52,9 +54,9 @@ public interface Mixer extends AutoCloseable {
         protected final void mix(double[] tempArray, double[] targetL, double[] targetR, int targetOffset, int length) {
             if (generator != null) {
                 generator.generate(tempArray, 0, length);
-            }
-            if (mixingRule != null) {
-                mixingRule.mix(tempArray, 0, targetL, targetR, targetOffset, length);
+                if (mixingRule != null) {
+                    mixingRule.mix(tempArray, 0, targetL, targetR, targetOffset, length);
+                }
             }
         }
     }
