@@ -74,9 +74,9 @@ They are expected to contain the unique author identification, as well as either
 
 ## Structure of the Performance
 
-TODO: mixing of an instrument in the performance - chosen by the performer, not evolvable.
-TODO: cross-fade between the previous and the next individual from the same performer - also chosen by the performer and not evolvable.
-TODO: instrument events, mix change events, what else?
+- **TODO**: mixing of an instrument in the performance - chosen by the performer, not evolvable.
+- **TODO**: cross-fade between the previous and the next individual from the same performer - also chosen by the performer and not evolvable.
+- **TODO**: instrument events, mix change events, what else?
 
 ## Performers, Listeners, Computers
 
